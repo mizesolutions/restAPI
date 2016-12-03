@@ -9,6 +9,7 @@ The back-end files are in the v1 subfolder: api.php, admin.php, and api.class.ph
 
 To add functionality to either endpoint you have to create a coresponding function in the class.
 
+<h4><b>XAMPP Setup</b></h4>
 In order to test locally, you will need to:
 set up a db on your XAMPP and name it: mizesolu_ewuStats    
 create a user named: mizesolu_ewuUser   
