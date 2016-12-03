@@ -1,7 +1,7 @@
 # restAPI
 REST API project with Arrasmith, Mize, and Perkins
 
-The main rest folder and format_functions foler should be placed in your htdocs folder for local testing.
+The main <b>rest folder and format_functions foler</b> should be placed in your htdocs folder for local testing.
 The back-end files are in the v1 subfolder: api.php, admin.php, and api.class.php
 api.php is the endpoint access for the user (localhost/rest/v1/ewu/  or www.mizesolutions.com/rest/v1/ewu/)
 admin.php is the endpoit access for the admin (localhost/rest/v1/admin/  or www.mizesolutions.com/rest/v1/admin/)
@@ -18,7 +18,7 @@ After the db is created you can run the contents of the mizesolu_ewuStats.sql fi
 
 In the v1 folder, there is a file named htaccess. Once you get things set up in your htdoc folder, add a  .   to the beginning of the file name. This will hide it, which is needed in order to have the cleaner looking urls for our project.
 
-<h3><strong>Tim:</strong></h3>
+<h4><strong>Tim:</strong></h4>
 For documentation, there are two files in the rest folder: restDocs.html and adminDoc.html
 restDocs is for User access which is just GET stuff
 adminDocs will have all the User stuff plus the Add, Edit, Delete info.
