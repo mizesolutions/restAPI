@@ -20,3 +20,8 @@ api.class.php is the class file that holds the functions used by both endpoints.
 
 To add functionality to either endpoint you have to create a coresponding function in the class.
 
+In order to test locally, you will need to:
+set up a db on your XAMPP and name it: mizesolu_ewuStats    
+create a user named: mizesolu_ewuUser   with pw: fcsewustats
+
+
