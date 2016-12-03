@@ -18,7 +18,7 @@ After the db is created you can run the contents of the mizesolu_ewuStats.sql fi
 
 In the v1 folder, there is a file named htaccess. Once you get things set up in your htdoc folder, add a  .   to the beginning of the file name. This will hide it, which is needed in order to have the cleaner looking urls for our project.
 
-Tim:
+<strong>Tim:</strong>
 For documentation, there are two files in the rest folder: restDocs.html and adminDoc.html
 restDocs is for User access which is just GET stuff
 adminDocs will have all the User stuff plus the Add, Edit, Delete info.
@@ -26,7 +26,7 @@ adminDocs will have all the User stuff plus the Add, Edit, Delete info.
 Here is a link to some Bootstrap tutorials and info to help with formating: http://www.w3schools.com/bootstrap/default.asp
 Basically all you do is add class attributes to stuff and the Bootstrap CSS makes it look nice.
 
-Zach:
+<strong>Zach:</strong>
 We need a little more functionality on the back-end so that the User can view the stats in different ways.
 Right now all that they can do is view all of the stats or one to a few depending on what they pick to get by.
 You had asked about viewing all teams with scores greater than something...we should add that.
