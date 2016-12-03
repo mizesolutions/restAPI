@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /rest/v1/
+RewriteRule ^ewu/ api.php
+RewriteRule ^admin/ admin.php
+</IfModule>
