@@ -12,6 +12,9 @@ $(document).ready(start);
       success: gotStats
     });
 
+    $("#viewOptBtn").on("click", viewOptions);
+
+    $("#panel2").hide();
 
   } // end start
 
@@ -67,6 +70,55 @@ $(document).ready(start);
                           '</nav>');
 
   } // end gotData
+
+
+
+
+//========================================================================================================================================
+//  EDIT MOVIE
+// Gets movie data from Server, returns json, writes to UI to allow edits
+//========================================================================================================================================
+  function viewOptions(){
+
+    console.log("View Options");
+
+    var viewData = '';
+
+    viewData += '<form>' +
+                '<div class="col-xs-12">' +
+                '<label> Search By:</lable><br>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">Year&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">Coach&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">Win&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">Loss&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">Tie&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">PCT&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">PF&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">PA&emsp;</label>' +
+                '<label class="radio-inline">' +
+                '<input type="radio" name="optradio">Delta&emsp;</label></div>' +
+                '<div class="col-xs-12">' +
+                '<br><label for="option">Seach For:</label>' +
+                '<input id="option" type="text" class="form-control"  name="option" placeholder="ex: 1948 or Bob Smith or 2 or 0.75000 or -2">' +
+                '</div>' +
+                '<div class="col-sm-1 col-md-1 col-lg-1" id="submitBtn">' +
+                '<button type="submit" class="btn btn-sm btn-success">Submit</button></div>' +
+                '</form>';
+
+  $("#panel2").empty();
+  $("#panel2").append(viewData);
+
+  $("#panel2").show();
+
+  } //end viewOptions
 
 
 

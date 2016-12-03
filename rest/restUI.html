@@ -191,7 +191,7 @@
             <a class="navbar-brand" href="restUI.html"><strong>AMP Stats</strong></a>
           </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="restDocs.html">Documents</a></li>
+            <li><a href="restDocs.html">API Documents</a></li>
             <li><a href="aboutAMP.html">About AMP</a></li>
             <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
@@ -234,10 +234,24 @@
     <div id="panel1" class="container">
       <div id="funcPanel1" class="well">
         <div class="row" id="addFormPanel">
-          <div class="col-sm-12 col-md-12 col-lg-12" id="funcForm">Instruction Panel for how to use the stuff.</div>
+          <div class="col-sm-12 col-md-12 col-lg-12" id="funcForm">
+            <p>Welcome to the <b>EWU Stats</b> page. Here you can easily view some basic EWU Football stats by year. Click on the View Options button below to open the option panel.
+            In the option panel you can search by any of the column headings and enter a search for option to narrow your view.</p>
+            <p><b>Example: </b>
+            <ul>
+              <li>Click on the Year radio button</li>
+              <li>In the Search For box, type in 1948</li>
+              <li>Click on the Submit button</li>
+            </ul>
+            You will now just see the information for that year.</p>
+            <p>Feel free to try searching with other options.</p>
+          </div>
+          <div class="col-sm-2 col-md-2 col-lg-2" id="optBtn"><button class="btn btn-primary" id="viewOptBtn">View Options</button>
         </div>
       </div>
     </div>
+    <div id="panel2" class="container"></div>
+    <br>
     <div id="panel0" class="container">
       <div id="statsPanel">Stats will display here in a simple table</div>
     </div>
