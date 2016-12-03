@@ -22,6 +22,10 @@ To add functionality to either endpoint you have to create a coresponding functi
 
 In order to test locally, you will need to:
 set up a db on your XAMPP and name it: mizesolu_ewuStats    
-create a user named: mizesolu_ewuUser   with pw: fcsewustats
+create a user named: mizesolu_ewuUser   
+with pw: fcsewustats
 
+After the db is created you can run the contents of the mizesolu_ewuStats.sql file from the SQL tab in PHPMyAdmin, just make sure that the new mizesolu_ewuStats is the active db. This will set up the table and fill it with the stats we have.
+
+In the v1 folder, there is a file named htaccess. Once you get things set up in your htdoc folder, add a  .   to the beginning of the file name. This will hide it, which is needed in order to have the cleaner looking urls for our project.
 
