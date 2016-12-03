@@ -38,7 +38,7 @@
     }
 
     /* Set a style for all buttons */
-    button {
+    .buttonLogin {
         background-color: #4CAF50;
         color: white;
         padding: 14px 20px;
@@ -49,10 +49,11 @@
     }
 
     /* Extra styles for the cancel button */
-    .cancelbtn {
+    .cancelbtnLogin {
         width: 100%;
         padding: 14px 20px;
         background-color: #c41230;
+        color: #ffffff;
     }
 
     /* Center the image and position the close button */
@@ -138,7 +139,7 @@
            display: block;
            float: none;
         }
-        .cancelbtn {
+        .cancelbtnLogin {
            width: 100%;
         }
     }
@@ -204,7 +205,7 @@
     class="close" title="Close Modal">&times;</span>
 
       <!-- Modal Content -->
-      <form class="modal-content animate" action="adminDoc.html" method="post">
+      <form class="modal-content animate" action="rewrite.php" method="POST">
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <img src="./img/ewuLogo2.png" alt="EWU Logo" class="avatar">
@@ -217,11 +218,11 @@
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
 
-          <button type="submit" >Login</button>
+          <button class="buttonLogin" type="submit" >Login</button>
         </div>
 
         <div class="container-lgin" style="background-color:#d2d2d2">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnLogin">Cancel</button>
         </div>
       </form>
     </div>
@@ -246,7 +247,7 @@
             You will now just see the information for that year.</p>
             <p>Feel free to try searching with other options.</p>
           </div>
-          <div class="col-sm-2 col-md-2 col-lg-2" id="optBtn"><button class="btn btn-primary" id="viewOptBtn">View Options</button>
+          <div class="col-sm-2 col-md-2 col-lg-2" id="optBtn"><button class="btn btn-primary" id="viewOptBtn">View Options</button></div>
         </div>
       </div>
     </div>
@@ -256,7 +257,7 @@
       <div id="statsPanel">Stats will display here in a simple table</div>
     </div>
     <div id="navBarBtm">
-      <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <nav class="navbar navbar-inverse navbar-bottom">
         <div class="container">
           <ul class="nav navbar-nav">
             <li class="active"><a href="aboutAMP.html">Created by Zachary Arrasmith, Brian Mize, and Tim Perkins</a></li>

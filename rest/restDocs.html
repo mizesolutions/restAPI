@@ -39,7 +39,7 @@
     }
 
     /* Set a style for all buttons */
-    button {
+    .buttonLogin {
         background-color: #4CAF50;
         color: white;
         padding: 14px 20px;
@@ -50,10 +50,11 @@
     }
 
     /* Extra styles for the cancel button */
-    .cancelbtn {
+    .cancelbtnLogin {
         width: 100%;
         padding: 14px 20px;
         background-color: #c41230;
+        color: #ffffff;
     }
 
     /* Center the image and position the close button */
@@ -205,7 +206,7 @@
     class="close" title="Close Modal">&times;</span>
 
       <!-- Modal Content -->
-      <form class="modal-content animate" action="adminDoc.html" method="post">
+      <form class="modal-content animate" action="rewrite.php" method="post">
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <img src="./img/ewuLogo2.png" alt="EWU Logo" class="avatar">
@@ -218,11 +219,11 @@
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
 
-          <button type="submit">Login</button>
+          <button class="buttonLogin" type="submit" >Login</button>
         </div>
 
         <div class="container-lgin" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtnLogin">Cancel</button>
         </div>
       </form>
     </div>

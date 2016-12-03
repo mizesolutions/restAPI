@@ -4,13 +4,7 @@ $(document).ready(start);
 
     console.log("Start");
 
-    $.ajax({
-      cache: false,
-      method: "GET",
-      dataType: "json",
-      url: "../rest/v1/api.php/",
-      success: gotStats
-    });
+    fetchStats("");
 
     $("#viewOptBtn").on("click", viewOptions);
 
@@ -18,6 +12,28 @@ $(document).ready(start);
 
   } // end start
 
+
+
+//==================================================================================================================================================================================================
+// GET Stats
+// Gets stats data from Server, returns json, writes to UI
+//========================================================================================================================================
+  function fetchStats(strValue) {
+
+    console.log("Fetch Stats");
+    console.log(strValue);
+
+    var urlValue = '../rest/v1/api.php/?' + strValue;
+
+    $.ajax({
+      cache: false,
+      method: "GET",
+      dataType: "json",
+      url: urlValue,
+      success: gotStats
+    });
+
+  } //end fetchStats
 
 
 //==================================================================================================================================================================================================
@@ -75,8 +91,8 @@ $(document).ready(start);
 
 
 //========================================================================================================================================
-//  EDIT MOVIE
-// Gets movie data from Server, returns json, writes to UI to allow edits
+// View Options
+// Populates Option Panel with view option form.
 //========================================================================================================================================
   function viewOptions(){
 
@@ -88,30 +104,33 @@ $(document).ready(start);
                 '<div class="col-xs-12">' +
                 '<label> Search By:</lable><br>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">Year&emsp;</label>' +
+                '<input type="radio" name="optradio" value="year">Year&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">Coach&emsp;</label>' +
+                '<input type="radio" name="optradio" value="coach">Coach&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">Win&emsp;</label>' +
+                '<input type="radio" name="optradio" value="win">Win&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">Loss&emsp;</label>' +
+                '<input type="radio" name="optradio" value="loss">Loss&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">Tie&emsp;</label>' +
+                '<input type="radio" name="optradio" value="tie">Tie&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">PCT&emsp;</label>' +
+                '<input type="radio" name="optradio" value="pct">PCT&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">PF&emsp;</label>' +
+                '<input type="radio" name="optradio" value="pf">PF&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">PA&emsp;</label>' +
+                '<input type="radio" name="optradio" value="pa">PA&emsp;</label>' +
                 '<label class="radio-inline">' +
-                '<input type="radio" name="optradio">Delta&emsp;</label></div>' +
+                '<input type="radio" name="optradio" value="delta">Delta&emsp;</label></div>' +
                 '<div class="col-xs-12">' +
-                '<br><label for="option">Seach For:</label>' +
-                '<input id="option" type="text" class="form-control"  name="option" placeholder="ex: 1948 or Bob Smith or 2 or 0.75000 or -2">' +
+                '<br><label for="searchOption">Seach For:</label>' +
+                '<input id="searchOption" type="text" class="form-control input-lg"  name="option" placeholder="ex: 1948 or Bob Smith or 2 or 0.75000 or -2">' +
                 '</div>' +
-                '<div class="col-sm-1 col-md-1 col-lg-1" id="submitBtn">' +
-                '<button type="submit" class="btn btn-sm btn-success">Submit</button></div>' +
+                '<div class="col-sm-6 col-md-6 col-lg-6">' +
+                '<div class="form-group">' +
+                '<br><button type="button" id="viewOptSubmit" class="btn btn-sm btn-success" onclick="fetchViewOptions()"><span class="glyphicon glyphicon-ok"></span> Submit</button>&emsp;<button type="button" id="refreshBtn" class="btn btn-sm btn-primary" onclick="start()"><span class="glyphicon glyphicon-refresh"></span> Refresh</button>' +
+                '</div></div>' +
                 '</form>';
+
 
   $("#panel2").empty();
   $("#panel2").append(viewData);
@@ -122,6 +141,23 @@ $(document).ready(start);
 
 
 
+  //========================================================================================================================================
+  // View Options
+  // Populates Option Panel with view option form.
+  //========================================================================================================================================
+    function fetchViewOptions(){
+
+      console.log("Fetch View Options");
+
+      var radioValue = $("input[name='optradio']:checked").val();
+      var searchValue = document.getElementById("searchOption").value;
+      console.log(radioValue + " = " + searchValue);
+
+      var strValue = radioValue + "=" + searchValue;
+
+      fetchStats(strValue);
+
+    } //end fetchViewOptions
 
 //========================================================================================================================================
 //  EDIT MOVIE
