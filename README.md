@@ -13,7 +13,7 @@ To add functionality to either endpoint you have to create a coresponding functi
 In order to test locally, you will need to
 <ul><li>set up a db on your XAMPP and name it: mizesolu_ewuStats </li>
 <li>create a user named: mizesolu_ewuUser </li>
-<li>with pw: fcsewustats </li>
+<li>with pw: fcsewustats </li></ul>
 
 After the db is created you can run the contents of the mizesolu_ewuStats.sql file from the SQL tab in your localhost phpMyAdmin, just make sure that the new mizesolu_ewuStats is the active db. This will set up the table and fill it with the stats we have.
 
