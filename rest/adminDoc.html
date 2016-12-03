@@ -142,6 +142,33 @@
            width: 100%;
         }
     }
+    .table-hover > tbody > tr:hover {
+      background-color: #dadada;
+    }
+    .table > thead > tr > td.danger,
+    .table > tbody > tr > td.danger,
+    .table > tfoot > tr > td.danger,
+    .table > thead > tr > th.danger,
+    .table > tbody > tr > th.danger,
+    .table > tfoot > tr > th.danger,
+    .table > thead > tr.danger > td,
+    .table > tbody > tr.danger > td,
+    .table > tfoot > tr.danger > td,
+    .table > thead > tr.danger > th,
+    .table > tbody > tr.danger > th,
+    .table > tfoot > tr.danger > th {
+      background-color: #c41230;
+      color: #ffffff;
+      /*#fe8585;*/
+    }
+    .table-hover > tbody > tr > td.danger:hover,
+    .table-hover > tbody > tr > th.danger:hover,
+    .table-hover > tbody > tr.danger:hover > td,
+    .table-hover > tbody > tr:hover > .danger,
+    .table-hover > tbody > tr.danger:hover > th {
+      background-color: #953041;
+      color: #ffffff;
+    }
     </style>
     <title>AMP Admin Docs</title>
   </head>
@@ -159,6 +186,12 @@
         </div>
       </div>
     </nav>
+    <!-- Logo Panel -->
+    <div id="logoPanel" class="container">
+      <img class="img-responsive center-block" src="./img/ewuBannerLogo.png" alt="EWU Logo" class="EWU Logo">
+      <br>
+    </div>
+    <!-- Instruction Panel -->
     <div id="panel1" class="container">
       <div id="funcPanel1" class="well">
         <div class="row" id="addFormPanel">
