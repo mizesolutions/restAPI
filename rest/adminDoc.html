@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/Favicon.ico">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--jQuery Validation Plugin -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- MyJS -->
+    <!-- <script src="ampDocs.js"></script> -->
+    <style>
+    /*Style for jQuery Validation Plugin*/
+    .error {
+      color:red;
+      font-size:85%;
+      font-family:verdana, Helvetica;
+    }
+
+    .open > .dropdown-menu {
+      /*display: block;*/
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        /*width: 50%;*/
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+
+    img.avatar {
+        width: 30%;
+        border-radius: 40%;
+    }
+
+    .container-lgin {
+        padding: 16px;
+        width: 100%;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 20%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+    }
+
+    @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+    </style>
+    <title>AMP Admin Docs</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-top">
+      <div id="navPanel" class="container">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="navbar-header active">
+            <a class="navbar-brand" href="adminDoc.html"><strong>AMP Admin Docs</strong></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="restUI.html">Use AMP</a></li>
+            <li><a href="aboutAMP.html">About AMP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="panel1" class="container">
+      <div id="funcPanel1" class="well">
+        <div class="row" id="addFormPanel">
+          <div class="col-sm-12 col-md-12 col-lg-12" id="funcForm">Instruction Panel for how to use the stuff.</div>
+        </div>
+      </div>
+    </div>
+    <div id="panel0" class="container">
+      <div id="statsPanel">Documentation goes here.</div>
+    </div>
+    <div id="navBarBtm">
+      <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="aboutAMP.html">Created by Zachary Arrasmith, Brian Mize, and Tim Perkins</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
