@@ -10,13 +10,13 @@ __/htdocs/<br>
 
 The back-end files are in the v1 subfolder: 
 <ul><li><b>api.php</b> is the endpoint access for the user (localhost/rest/v1/ewu/  or www.mizesolutions.com/rest/v1/ewu/)</li>
-<li><b>admin.php</b> is the endpoit access for the admin (localhost/rest/v1/admin/  or www.mizesolutions.com/rest/v1/admin/)</li>
+<li><b>admin.php</b> is the endpoint access for the admin (localhost/rest/v1/admin/  or www.mizesolutions.com/rest/v1/admin/)</li>
 <li><b>api.class.php</b> is the class file that holds the functions used by both endpoints.</li></ul>
 
-To add functionality to either endpoint you have to create a coresponding function in the class.
+To add functionality to either endpoint you have to create a corresponding function in the class.
 
 <h4><b>XAMPP Setup</b></h4>
-In order to test locally, you will need to
+In order to test locally, you will need to:
 <ul><li>set up a db on your localhost and name it: mizesolu_ewuStats </li>
 <li>create a user named: mizesolu_ewuUser </li>
 <li>with pw: fcsewustats </li></ul>
