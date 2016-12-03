@@ -1,7 +1,7 @@
 # restAPI
 REST API project with Arrasmith, Mize, and Perkins
 
-The main <b>rest folder</b> and <b>format_functions foler</b> should be placed in your htdocs folder for local testing.<br>
+The main <b>rest folder</b> and <b>format_functions foler</b> should be placed in your htdocs folder for local testing.<br><br>
 __/htdocs/<br>
 &emsp;&emsp;|__format_functions/<br>
 &emsp;&emsp;|__rest/<br>
