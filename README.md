@@ -2,11 +2,11 @@
 REST API project with Arrasmith, Mize, and Perkins
 
 The main <b>rest folder</b> and <b>format_functions foler</b> should be placed in your htdocs folder for local testing.<br>
-/htdocs/<br>
-&emsp;&emsp;|_format_functions/<br>
-&emsp;&emsp;|_rest/<br>
-&emsp;&emsp;&emsp;&emsp;|_img/<br>
-&emsp;&emsp;&emsp;&emsp;|_v1/<br>
+__/htdocs/<br>
+&emsp;&emsp;|__format_functions/<br>
+&emsp;&emsp;|__rest/<br>
+&emsp;&emsp;&emsp;&emsp;|__img/<br>
+&emsp;&emsp;&emsp;&emsp;|__v1/<br>
 
 The back-end files are in the v1 subfolder: api.php, admin.php, and api.class.php
 <ul><li><b>api.php</b> is the endpoint access for the user (localhost/rest/v1/ewu/  or www.mizesolutions.com/rest/v1/ewu/)</li>
