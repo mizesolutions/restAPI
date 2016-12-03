@@ -3,9 +3,9 @@ REST API project with Arrasmith, Mize, and Perkins
 
 The main <b>rest folder</b> and <b>format_functions foler</b> should be placed in your htdocs folder for local testing.
 The back-end files are in the v1 subfolder: api.php, admin.php, and api.class.php
-api.php is the endpoint access for the user (localhost/rest/v1/ewu/  or www.mizesolutions.com/rest/v1/ewu/)
-admin.php is the endpoit access for the admin (localhost/rest/v1/admin/  or www.mizesolutions.com/rest/v1/admin/)
-api.class.php is the class file that holds the functions used by both endpoints.
+<ul><li><b>api.php</b> is the endpoint access for the user (localhost/rest/v1/ewu/  or www.mizesolutions.com/rest/v1/ewu/)</li>
+<li><b>admin.php</b> is the endpoit access for the admin (localhost/rest/v1/admin/  or www.mizesolutions.com/rest/v1/admin/)</li>
+<li><b>api.class.php</b> is the class file that holds the functions used by both endpoints.</li></ul>
 
 To add functionality to either endpoint you have to create a coresponding function in the class.
 
