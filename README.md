@@ -8,7 +8,7 @@ __/htdocs/<br>
 &emsp;&emsp;&emsp;&emsp;|__img/<br>
 &emsp;&emsp;&emsp;&emsp;|__v1/<br>
 
-The back-end files are in the v1 subfolder: api.php, admin.php, and api.class.php
+The back-end files are in the v1 subfolder: 
 <ul><li><b>api.php</b> is the endpoint access for the user (localhost/rest/v1/ewu/  or www.mizesolutions.com/rest/v1/ewu/)</li>
 <li><b>admin.php</b> is the endpoit access for the admin (localhost/rest/v1/admin/  or www.mizesolutions.com/rest/v1/admin/)</li>
 <li><b>api.class.php</b> is the class file that holds the functions used by both endpoints.</li></ul>
