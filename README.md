@@ -11,7 +11,7 @@ To add functionality to either endpoint you have to create a coresponding functi
 
 <h4><b>XAMPP Setup</b></h4>
 In order to test locally, you will need to
-<ul><li>set up a db on your XAMPP and name it: mizesolu_ewuStats </li>
+<ul><li>set up a db on your localhost and name it: mizesolu_ewuStats </li>
 <li>create a user named: mizesolu_ewuUser </li>
 <li>with pw: fcsewustats </li></ul>
 
