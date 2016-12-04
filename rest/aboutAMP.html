@@ -171,6 +171,9 @@
       background-color: #953041;
       color: #ffffff;
     }
+    #infoTable td:hover {
+      background: #ede6e7;
+    }
     </style>
     <script>
     // Get the modal
@@ -232,19 +235,44 @@
       <img class="img-responsive center-block" src="./img/ewuBannerLogo.png" alt="EWU Logo" class="EWU Logo">
       <br>
     </div>
-    <!-- Instruction Panel -->
+    <!-- Info Panel -->
     <div id="panel1" class="container">
-      <div id="funcPanel1" class="well">
-        <div class="row" id="addFormPanel">
-          <div class="col-sm-12 col-md-12 col-lg-12" id="funcForm">Info panel about us cause we are cool like that.</div>
+      <div id="infoPanel1" class="well">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <p>Thank you for checking out <b>AMP Stats</b>, our RESTful API project. This was the result of the collaborative efforts of <b><i>Zachary Arrasmith, Brian Mize, and Tim Perkins</i></b>. The project name came from the first letter of our last names, and we thought that AMP was an appropriate name for a project that deals with athletics.</p>
+            <p>For this project, we were to create a REST server that would allow for both the retrieval and the maintenance of data. For this we provided two end points; one for users who will just be retrieving data, and the other for admins who will be maintaining the data.</p>
+            <p>Users are only given access to GET methods that retrieve the recourses so that they can be displayed however the user sees fit. Admins are given all the User GET methods along with methods for POST, PUT, and DELETE.</p>
+            <p>We have created REST styled documentation for Users that can be found by clicking on API Documents. We also have REST styled documentation for Admins that can be access by clicking on Login. Admin access requires a user name and password.</p>
+            <p>We have also created a front-end UI for casual users that uses our User API to be able to view our EWU Football stats data set.</p>
+            <p>Feel free to contact us with any questions, comments or concerns.</p>
+          </div>
         </div>
       </div>
     </div>
     <div id="panel0" class="container">
-      <div id="statsPanel">Little bios with links to our sites (if you want).</div>
+      <div id="statsPanel" class="panel panel-default">
+        <table class="table table-condensed" id="infoTable">
+          <tbody>
+            <tr>
+            <td class="col-sm-4"><p><center><h4>Zachary Arrasmith</h4></center></p><p>Zachary is a senior at <b>Eastern Washington University</b> studying for his BS in Computer Science.</p>
+              <p> Zachary considers himself to be, above all else, goal driven. His goals are ambitious, and to accomplish those goals, he often takes risks that one would not normally take. These risks, however, are calculated. Zachary took the risk of taking numerous four course quarters (most people take three courses during one quarter), all under careful calculations and understanding of the degree that he is getting. He rarely jumps head first into a problem that he is tasked with, as the risks far outweigh the benefits. He researches, considers, plans, and consistently cross checks every possible problem area. His attention to detail is to the annoyance of those around him. While they find it annoying, Zachary finds it useful.<p>
+                <p> <a href="mailto:zacharyarrasmith@gmail.com?Subject=Contact%20From%20AMPStats%20Project">Contact Zachary</a><br><br></td>
+            <td class="col-sm-4"><p><center><h4>Brian Mize</h4></center></p><p>Brian is a junior at <b>Eastern Washington University</b> studying for his BS in Computer Science.</p>
+              <p>Brian works a couple of part-time jobs; one for the Computer Science department as a “paper grader” and one for Young Life North Spokane as the Area Administrator. To help him stay sane he plays guitar and works on tech/CS and DIY projects around the house. You can read about some of Brian’s CS projects by looking through <a href="www.mizesolutions.com" target="_blank">his posts</a>.</p>
+              <p>Brian recently (re)discovered that Full Stack Web Development is something that he is very passionate about and it is the path he wants to pursue when he graduates. If you happen to be in Web-Dev, he would like to connect with you. <p>
+                <p><a href="http://mizesolutions.com/index.php/contact/" target="_blank">Contact Brian</a></td>
+            <td class="col-sm-4"><p><center><h4>Tim Perkins</h4></center></p><p>Tim is a senior at <b>Eastern Washington University</b> studying for his BS in Computer Science.</p>
+              <p> Tim is currently a software engineering intern for BIAS Software in Spokane, Washington and works for the Computer Science department at EWU as a paper grader for two classes: an introductory Java course and Design Patterns.  At BIAS he has primarily been using Salesforce, which uses Apex, SOQL, and Visualforce an object oriented programming language, database query language, and web development markup language, respectively.  While most of his work in recent years has been related to teaching, Tim has focused his current education on learning software engineering.</p>
+              <p> <a href="mailto:twrperkins@gmail.com?Subject=Contact%20From%20AMPStats%20Project">Contact Tim</a></td>
+          </tbody>
+        </table>
+      </div>
     </div>
+    <br>
+    <br>
     <div id="navBarBtm">
-      <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <nav class="navbar navbar-inverse navbar-bottom">
         <div class="container">
           <ul class="nav navbar-nav">
             <li class="active"><a href="aboutAMP.html">Created by Zachary Arrasmith, Brian Mize, and Tim Perkins</a></li>

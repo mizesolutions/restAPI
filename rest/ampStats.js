@@ -50,7 +50,7 @@ $(document).ready(start);
     statsData += '<table class="table table-condensed table-hover">' +
                  '<thead>' +
                  '<tr class="danger"><th>Year</th><th>Coach</th><th>Win</th><th>Loss</th><th>Tie</th><th>Pct</th><th>PF</th><th>PA</th><th>Delta</th></tr>' +
-                 '</thead>';
+                 '</thead><tbody>';
 
     for (i = 0; i < dt.length; i ++) {
        var line = dt[i];
@@ -74,6 +74,8 @@ $(document).ready(start);
                       '</tr>';
        }
     } // end for
+
+    statsData += '</tbody></table>';
 
     $("#statsPanel").append(statsData);
     $("#navBarBtm").empty();
