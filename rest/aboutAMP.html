@@ -13,9 +13,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- MyJS -->
-    <!-- <script src="ampStats.js"></script> -->
-    <style>
+
     <style>
     /*Style for jQuery Validation Plugin*/
     .error {
@@ -51,10 +49,13 @@
 
     /* Extra styles for the cancel button */
     .cancelbtnLogin {
-        width: 100%;
-        padding: 14px 20px;
         background-color: #c41230;
         color: #ffffff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
     }
 
     /* Center the image and position the close button */
@@ -65,7 +66,7 @@
     }
 
     img.avatar {
-        width: 50%;
+        width: 35%;
         border-radius: 100%;
     }
 
@@ -99,7 +100,7 @@
         background-color: #fefefe;
         margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #888;
-        width: 20%; /* Could be more or less, depending on screen size */
+        width: 40%; /* Could be more or less, depending on screen size */
     }
 
     /* The Close Button (x) */
@@ -140,10 +141,11 @@
            display: block;
            float: none;
         }
-        .cancelbtn {
+        .cancelbtnLogin {
            width: 100%;
         }
     }
+    
     .table-hover > tbody > tr:hover {
       background-color: #dadada;
     }

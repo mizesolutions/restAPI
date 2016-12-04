@@ -16,7 +16,6 @@
     <!-- MyJS -->
     <!-- <script src="ampDocs.js"></script> -->
     <style>
-    <style>
     /*Style for jQuery Validation Plugin*/
     .error {
       color:red;
@@ -51,10 +50,13 @@
 
     /* Extra styles for the cancel button */
     .cancelbtnLogin {
-        width: 100%;
-        padding: 14px 20px;
         background-color: #c41230;
         color: #ffffff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
     }
 
     /* Center the image and position the close button */
@@ -65,7 +67,7 @@
     }
 
     img.avatar {
-        width: 50%;
+        width: 35%;
         border-radius: 100%;
     }
 
@@ -99,7 +101,7 @@
         background-color: #fefefe;
         margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #888;
-        width: 20%; /* Could be more or less, depending on screen size */
+        width: 40%; /* Could be more or less, depending on screen size */
     }
 
     /* The Close Button (x) */
@@ -140,10 +142,11 @@
            display: block;
            float: none;
         }
-        .cancelbtn {
+        .cancelbtnLogin {
            width: 100%;
         }
     }
+    
     .table-hover > tbody > tr:hover {
       background-color: #dadada;
     }
@@ -170,6 +173,9 @@
     .table-hover > tbody > tr.danger:hover > th {
       background-color: #953041;
       color: #ffffff;
+    }
+    #infoTable td:hover {
+      background: #ede6e7;
     }
     </style>
     <script>
